@@ -1,3 +1,6 @@
+import Logo from "@/components/ui/Logo";
+import { navigation } from "@/lib/constants/navigation";
+
 export default function Navbar(){
- return <header className="w-full border-b border-white/10 px-6 py-5"><nav className="flex items-center justify-between"><div className="text-2xl font-bold gold-text">AASHA</div><div className="flex gap-6 text-sm"><span>Home</span><span>Collections</span><span>About</span><span>Contact</span></div></nav></header>;
+ return <header className="border-b border-white/10 px-6 py-5"><nav className="flex items-center justify-between"><Logo/><div className="hidden md:flex gap-6">{navigation.map(item=><a key={item.href} href={item.href}>{item.name}</a>)}</div></nav></header>;
 }
