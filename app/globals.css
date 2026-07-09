@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --aasha-black: #050505;
+  --aasha-gold: #d4af37;
+  --aasha-white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--aasha-black);
+  color: var(--aasha-white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gold-text {
+  color: var(--aasha-gold);
+}
